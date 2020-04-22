@@ -1,27 +1,28 @@
 var vo = new Vue({
     el: '#app',
     data: {
-        nama: "wahyu",
-        umur: 19
-    },
-    // Computed basic
-    // computed: {
-    //     biodata: function () {
-    //         return this.nama + " umurnya " + this.umur
-    //     }
-    // }
 
-    // Computed advanced (get, post)
-    computed: {
-        biodata: {
-            get: function () {
-                return this.nama + " umurnya " + this.umur
+        // Objek biasa
+
+        students: {
+            nama: "Objek",
+            umur: 001
+        },
+
+        // Array yang menampung objek
+        members: [{
+                nama: "Wahyu",
+                umur: 19
             },
-            set: function (parameter) {
-                var ubah = parameter.split(' ');
-                this.nama = ubah[0]
-                this.umur = ubah[1]
+            {
+                nama: "Antok",
+                umur: 220
+            },
+            {
+                nama: "Rey",
+                umur: 123
             }
-        }
+        ]
+
     }
 });

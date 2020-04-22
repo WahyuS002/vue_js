@@ -10,7 +10,13 @@
 <body>
 
     <div id="app">
-        <p>{{ biodata }}</p>
+        <li>
+            <ul><b>V-for untuk mengeluarkan object dalam array</b></ul>
+            <ul v-for="member in members">{{ member.nama }} - {{ member.umur }}</ul>
+            <br>
+            <ul><b>V-for untuk mengeluarkan object biasa</b></ul>
+            <ul v-for="(student, key) in students">{{ key }} -- {{ student }}</ul>
+        </li>
     </div>
 
 </body>
