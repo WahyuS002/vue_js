@@ -10,10 +10,8 @@
 <body>
 
     <div id="app">
-        <input type="text" v-on:keyup.enter="input('Data Masuk')">
-        <button v-on:click="klik">Click Me</button>
-        <br>
-        <a href="" v-on:click.prevent>Link</a>
+        <a v-bind:href="url_google">Google</a>
+        <input type="text" v-bind:value="search">
     </div>
 
 </body>
