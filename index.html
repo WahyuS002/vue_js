@@ -10,13 +10,10 @@
 <body>
 
     <div id="app">
-        <li>
-            <ul><b>V-for untuk mengeluarkan object dalam array</b></ul>
-            <ul v-for="member in members">{{ member.nama }} - {{ member.umur }}</ul>
-            <br>
-            <ul><b>V-for untuk mengeluarkan object biasa</b></ul>
-            <ul v-for="(student, key) in students">{{ key }} -- {{ student }}</ul>
-        </li>
+        <input type="text" v-on:keyup.enter="input('Data Masuk')">
+        <button v-on:click="klik">Click Me</button>
+        <br>
+        <a href="" v-on:click.prevent>Link</a>
     </div>
 
 </body>
