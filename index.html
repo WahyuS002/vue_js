@@ -10,14 +10,18 @@
 <body>
 
     <div id="app">
-        <input type="text" v-model="inputText">
-        <p> {{ inputText }} </p>
-
-        <br>
-        <input type="radio" v-model="lesson" value="html">html
-        <input type="radio" v-model="lesson" value="css">css
-        <p> {{ lesson }} </p>
+        <template-baru :nama="nama" :umur="umur"></template-baru>
+        <template-baru></template-baru>
     </div>
+
+    <template id="newTemplate">
+        <div>
+            <ul>
+                <li>Nama : {{ nama }}</li>
+                <li>Umur : {{ umur }}</li>
+            </ul>
+        </div>
+    </template>
 
 </body>
 
